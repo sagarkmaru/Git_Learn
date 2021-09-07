@@ -1,0 +1,7 @@
+- name: Gather vmware host facts
+  community.vmware.vmware_host_facts:
+    hostname: "{{ ESXi7 }}"
+    username: "{{ root }}"
+    password: "{{ !QAZxsw2 }}"
+  register: host_facts
+  delegate_to: localhost
